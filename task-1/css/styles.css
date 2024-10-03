@@ -26,20 +26,21 @@
 .menu-icon {
   font-size: 25px;
 }
+.mobile-drawer {
+  position: fixed;
+  background: var(--color2);
+  padding: 30px 50px;
+  height: 100vh;
+  transition: right 0.3s;
+}
 .hide-drawer {
-  top: -1000px;
-  right: 0px;
+  top: 0;
+  right: -1000px;
 }
 .show-drawer {
   top: 0;
   right: 0;
   z-index: 100;
-}
-.mobile-drawer {
-  position: absolute;
-  background: var(--color2);
-  padding: 30px 50px;
-  height: 100vh;
 }
 .mobile-drawer li {
   list-style: none;
@@ -52,47 +53,57 @@
   display: none;
 }
 
-/* hero sectio */
+/* hero section */
 
 .hero {
-  background-image: url("../images/hero.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
   height: 60vh;
-  width: 100vw;
-  position: relative;
+  padding: 10px;
+  text-align: center;
+  color: white;
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.text {
-  z-index: 1;
-  padding: 10px;
+
+.hero-text h1 {
+  border: 1px solid white;
 }
-.text h1 {
-  color: var(--color4);
-  border: 2px solid var(--color4);
-  text-align: center;
-  padding: 10px;
+
+.cards {
+  width: 90%;
+  margin: 100px auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 30px;
 }
-.text p {
-  color: black;
-  font-weight: bold;
-  text-align: center;
+
+.card {
+  /* background-color: #f5efff; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border-radius: 10px;
 }
-.overlay {
-  position: absolute;
-  top: 0;
-  right: 0;
+
+.card:hover {
+  box-shadow: 1px 1px 4px #f5efff;
+}
+
+.card:hover .card-img {
+  transform: scale(1.01);
+  transform: rotate(-1deg);
+}
+
+.card-img {
   width: 100%;
-  height: 100%;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    90deg,
-    rgb(23, 23, 24) 0%,
-    rgb(70, 71, 71) 45%,
-    rgb(23, 23, 24) 100%
-  );
-  opacity: 0.5;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card-text {
+  padding: 15px 10px;
 }

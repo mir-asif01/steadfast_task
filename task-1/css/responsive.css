@@ -13,10 +13,13 @@
   .menu-icon-container {
     display: none;
   }
-  .text h1 {
-    font-size: 40px;
+  .cards {
+    grid-template-columns: 1fr 1fr;
   }
-  .text p {
-    font-size: 20px;
+}
+
+@media (min-width: 1050px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
   }
 }
