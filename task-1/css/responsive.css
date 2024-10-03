@@ -1,0 +1,8 @@
+@media (min-width: 550px) {
+  .desktop-tab-links {
+    display: block;
+  }
+  .menu-icon-container {
+    display: none;
+  }
+}
