@@ -1,8 +1,22 @@
 @media (min-width: 550px) {
   .desktop-tab-links {
-    display: block;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  .desktop-tab-links li {
+    list-style: none;
+    font-size: 20px;
+    font-weight: 600;
   }
   .menu-icon-container {
     display: none;
+  }
+  .text h1 {
+    font-size: 40px;
+  }
+  .text p {
+    font-size: 20px;
   }
 }
