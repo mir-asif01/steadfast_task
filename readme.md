@@ -2,7 +2,7 @@
 
 ## to run these project locally on your machine, please clone/download the repository.
 
-## Task-1
+# Task-1
 
 ### live site : https://famous-capybara-66e190.netlify.app/
 
@@ -22,7 +22,7 @@
 
 ### tech-stack : `htmll` `css` `javascript`
 
-## Task-2 :
+# Task-2 :
 
 ### live site : https://darling-pasca-c62023.netlify.app/
 
@@ -40,9 +40,15 @@
 
 ### tech-stack : `reactjs` `tailwind css`
 
-## Task-3 :
+# Task-3 :
 
 ### live site : https://glistening-panda-af419b.netlify.app/
+
+### steps
+
+- In this task to solve the filtering problem, first I used react's useState hook to manage the input and select fields value.
+- Used the handleFilter function to implement filter by category and price.
+- Users can filter by category only as well as can also filter only by either minimum and maximum prices.
 
 ### to run this project locally, change the directory and install the dependencies using
 
