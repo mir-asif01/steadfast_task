@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "title": "Realme C55",
+    "category": "smartphone",
+    "price": 100
+  },
+  {
+    "id": 2,
+    "title": "Samsung A2",
+    "category": "smartphone",
+    "price": 50
+  },
+  {
+    "id": 3,
+    "title": "Redmi Note7",
+    "category": "smartphone",
+    "price": 120
+  },
+  {
+    "id": 4,
+    "title": "Sony WH",
+    "category": "headphone",
+    "price": 89
+  },
+  {
+    "id": 5,
+    "title": "Sennheiser HD",
+    "category": "headphone",
+    "price": 69
+  },
+  {
+    "id": 6,
+    "title": "A4Tech HS",
+    "category": "headphone",
+    "price": 49
+  }
+]
