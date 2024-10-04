@@ -1,12 +1,13 @@
-export default function ProductCard() {
-  //   const { category, title, price } = product
+import "./App.css"
+export default function ProductCard({ product }) {
+  const { category, title, price } = product
   return (
     <>
-      <div>
-        <h2>{"title"}</h2>
+      <div className="card">
+        <h2>{title}</h2>
         <p>
-          <span>{"category"}</span>
-          <span>{"price"}</span>
+          <span>{category}</span>
+          <span className="pd-price">${price}</span>
         </p>
       </div>
     </>
