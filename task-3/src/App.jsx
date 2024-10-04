@@ -49,7 +49,14 @@ export default function App() {
 
   const handleFilter = () => {
     if (category === "all") {
-      setProducts(products)
+      if (!(minPrice || maxPrice)) {
+        setProducts(products)
+      } else {
+        let filteredByPrice = products.filter(
+          (pd) => pd.price >= minPrice && pd.price <= maxPrice
+        )
+        setProducts(filteredByPrice)
+      }
     } else {
       let filteredByCategory = products.filter((pd) => pd.category === category)
       if (!(minPrice || maxPrice)) {
