@@ -21,7 +21,7 @@ export default function Cards() {
     {
       id: 1,
       img: jsImg,
-      title: "Jacascript",
+      title: "Javascript",
       desc: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat,tempore",
     },
     {
@@ -32,7 +32,7 @@ export default function Cards() {
     },
   ]
   return (
-    <section className="p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-[20px] ">
+    <section className="p-[10px] grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-[20px] my-[100px] md:mx-[50px]">
       {card_data.map((card) => (
         <SingleCard key={card.id} card={card} />
       ))}
