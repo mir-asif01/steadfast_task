@@ -51,6 +51,12 @@ export default function App() {
     if (category === "all") {
       if (!(minPrice || maxPrice)) {
         setProducts(products)
+      } else if (!minPrice && maxPrice) {
+        let filteredByMaxPrice = products.filter((pd) => pd.price <= maxPrice)
+        setProducts(filteredByMaxPrice)
+      } else if (minPrice && !maxPrice) {
+        let filteredByMinPrice = products.filter((pd) => pd.price >= minPrice)
+        setProducts(filteredByMinPrice)
       } else {
         let filteredByPrice = products.filter(
           (pd) => pd.price >= minPrice && pd.price <= maxPrice
